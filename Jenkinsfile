@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "debasis86/simpliproject"
+    registry = "debasis86/achistar"
     registryCredential = 'dockerhub'
   }
   agent any
