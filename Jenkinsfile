@@ -32,7 +32,7 @@ pipeline {
 }
 node {
     stage('Execute Image'){
-        def customImage = docker.build("debasis86/simpliproject${env.BUILD_NUMBER}")
+        def customImage = docker.build("debasis86/achistar${env.BUILD_NUMBER}")
         customImage.inside {
             sh 'echo This is the code executing inside the container.'
         }
